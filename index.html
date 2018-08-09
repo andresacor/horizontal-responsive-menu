@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu horizontal responsive</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
+    crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class='logo'>
+                <img src="img/logo-andres.svg" alt="logo" width='40' class='icon' >
+            </a>
+            <div id="toggle-menu">
+                <img src="img/hamburguer-icon.svg" alt="icono hamburguer" width='30' class='hamburguer'>
+            </div>
+            <ul class="ul">
+                <li class="li">
+                    <i class="icono fas fa-trophy"></i>
+                    <a href="" class="a">Home</a>
+                </li>
+                <li class="li">
+                    <i class="icono fas fa-headset"></i>
+                    <a href="" class="a">Services</a>
+                </li>
+                <li class="li">
+                    <i class="icono fas fa-dice-two"></i>
+                    <a href="" class="a">About</a>
+                </li>
+                <li class="li">
+                    <i class="icono fas fa-gamepad"></i>
+                    <a href="" class="a">Shop</a>
+                </li>
+                <li class="li">
+                    <i class="icono fas fa-dollar-sign"></i>
+                    <a href="" class="a">Pricing</a>
+                </li>
+                <li class="li">
+                    <i class="icono fas fa-paper-plane"></i>
+                    <a href="" class="a">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <script src="js/jquery.js"></script>
+   <script src="js/all.js"></script>
+    <script>
+    $('#toggle-menu').click(function(){
+            $(this).next().slideToggle();
+        });
+    </script>
+</body>
+</html>
